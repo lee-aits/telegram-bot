@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-04 16:02:23</sys_created_on>
+        <sys_id>2286c77bdbe2a410db14560868961925</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_550467_telegram_telegram_api_setup.x_550467_telegram.telegram_admin</sys_name>
+        <sys_package display_value="Telegram Bot" source="x_550467_telegram">98d5c733db22a410db14560868961997</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Telegram Bot">98d5c733db22a410db14560868961997</sys_scope>
+        <sys_security_acl display_value="x_550467_telegram_telegram_api_setup">a686c77bdbe2a410db14560868961921</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_2286c77bdbe2a410db14560868961925</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-04 16:02:23</sys_updated_on>
+        <sys_user_role display_value="x_550467_telegram.telegram_admin" name="x_550467_telegram.telegram_admin">7ed5c73fdba2a410db14560868961981</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

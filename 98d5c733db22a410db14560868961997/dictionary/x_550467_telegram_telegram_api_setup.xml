@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="update_synch=true" extends="sys_metadata" label="Telegram API Setup" max_length="40" name="x_550467_telegram_telegram_api_setup" type="collection">
+        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="API token" max_length="255" name="api_token" type="string"/>
+    </element>
+</database>
