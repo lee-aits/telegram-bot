@@ -10,8 +10,58 @@
         <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
 
     // implement resource here
-	var req = request.body.dataString;
-	gs.info("[telegram bot request] " + req);
+    var req = request.body.data;
+    gs.info("[telegram bot request] " + JSON.stringify(req));
+	var msg = '';
+
+    if (req.message.text == "/start") {
+        msg = {
+            text: 'Hi! If this if your first time here, we need to check your phone number!',
+            chat_id: req.message.chat.id.toString(),
+            reply_markup: {
+                keyboard: [
+                    [
+                        {
+                            text: "Send phone number",
+                            request_contact: true
+                        }
+                    ], [
+
+                        {
+                            text: "No thanks."
+                        }
+                    ]
+                ],
+                resize_keyboard: true,
+                one_time_keyboard: true
+            }
+        };
+        sendMessage(msg);
+    }
+
+    if (req.message.contact.phone_number) {
+        msg = {
+            text: 'Thanks!',
+            chat_id: req.message.chat.id.toString()
+        };
+        sendMessage(msg);
+    }
+
+    function sendMessage(body) {
+        try {
+            var r = new sn_ws.RESTMessageV2('x_550467_telegram.TelegramBot', 'sendMessage');
+            r.setRequestBody(JSON.stringify(body));
+
+            var res = r.execute();
+            var responseBody = res.getBody();
+            var httpStatus = res.getStatusCode();
+            gs.info("[telegram bot response " + httpStatus.toString() + "] " + responseBody.toString());
+        }
+        catch (ex) {
+            var message = ex.message;
+            gs.info("[telegram bot error] " + message.toString());
+        }
+    }
 
 })(request, response);]]></operation_script>
         <operation_uri>/api/x_550467_telegram/telegram_bot</operation_uri>
@@ -27,14 +77,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-03-04 16:13:06</sys_created_on>
         <sys_id>95b8cfbbdbe2a410db1456086896198b</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_name>Hook</sys_name>
         <sys_package display_value="Telegram Bot" source="x_550467_telegram">98d5c733db22a410db14560868961997</sys_package>
         <sys_policy/>
         <sys_scope display_value="Telegram Bot">98d5c733db22a410db14560868961997</sys_scope>
         <sys_update_name>sys_ws_operation_95b8cfbbdbe2a410db1456086896198b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-03-04 16:33:00</sys_updated_on>
+        <sys_updated_on>2021-03-05 00:16:32</sys_updated_on>
         <web_service_definition display_value="Telegram Bot">22388bbbdbe2a410db14560868961902</web_service_definition>
         <web_service_version/>
     </sys_ws_operation>

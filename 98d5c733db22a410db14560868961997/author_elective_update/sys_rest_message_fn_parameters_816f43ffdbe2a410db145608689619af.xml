@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters">
+    <sys_rest_message_fn_parameters action="DELETE">
+        <name>chat_id</name>
+        <rest_message_function display_value="sendMessage">7d0fcf7fdbe2a410db14560868961912</rest_message_function>
+        <sys_class_name>sys_rest_message_fn_parameters</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-04 16:41:04</sys_created_on>
+        <sys_id>816f43ffdbe2a410db145608689619af</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>chat_id</sys_name>
+        <sys_package display_value="Telegram Bot" source="x_550467_telegram">98d5c733db22a410db14560868961997</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Telegram Bot">98d5c733db22a410db14560868961997</sys_scope>
+        <sys_update_name>sys_rest_message_fn_parameters_816f43ffdbe2a410db145608689619af</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-04 16:41:39</sys_updated_on>
+        <type>string</type>
+        <value>1166730623</value>
+    </sys_rest_message_fn_parameters>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Telegram Bot">98d5c733db22a410db14560868961997</application>
+        <file_path/>
+        <instance_id>c0cb87bfdbbb67008aea21c4059619c1</instance_id>
+        <instance_name>dev74023</instance_name>
+        <name>sys_rest_message_fn_parameters_816f43ffdbe2a410db145608689619af</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters"><sys_rest_message_fn_parameters action="INSERT_OR_UPDATE"><name>chat_id</name><rest_message_function display_value="sendMessage">7d0fcf7fdbe2a410db14560868961912</rest_message_function><sys_class_name>sys_rest_message_fn_parameters</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-03-04 16:41:04</sys_created_on><sys_id>816f43ffdbe2a410db145608689619af</sys_id><sys_mod_count>1</sys_mod_count><sys_name>chat_id</sys_name><sys_package display_value="Telegram Bot" source="x_550467_telegram">98d5c733db22a410db14560868961997</sys_package><sys_policy/><sys_scope display_value="Telegram Bot">98d5c733db22a410db14560868961997</sys_scope><sys_update_name>sys_rest_message_fn_parameters_816f43ffdbe2a410db145608689619af</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-03-04 16:41:39</sys_updated_on><type>string</type><value>1166730623</value></sys_rest_message_fn_parameters></record_update>]]></payload>
+        <payload_hash>-668000694</payload_hash>
+        <record_name>chat_id</record_name>
+        <reverted_from/>
+        <source>58d5cf3bdbe2a410db14560868961911</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-04 16:41:39</sys_created_on>
+        <sys_id>b98f03ffdbe2a410db145608689619bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>177fe1dc4350000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-04 16:41:39</sys_updated_on>
+        <type>Variable Substitutions</type>
+        <update_guid>358f03ff7fe2a41065eab6b8638ea6bd</update_guid>
+        <update_guid_history>358f03ff7fe2a41065eab6b8638ea6bd:-668000694,896f47ff66e2a4103fb41a1ba9c5f1dd:-1076069104</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-04 23:55:55</sys_created_on>
+        <sys_db_object display_value="" name="sys_rest_message_fn_parameters">sys_rest_message_fn_parameters</sys_db_object>
+        <sys_id>04473defc6e647d09933c968111d1d49</sys_id>
+        <sys_metadata>816f43ffdbe2a410db145608689619af</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>chat_id</sys_name>
+        <sys_package display_value="Telegram Bot" source="x_550467_telegram">98d5c733db22a410db14560868961997</sys_package>
+        <sys_parent display_value="sendMessage">7d0fcf7fdbe2a410db14560868961912</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Telegram Bot">98d5c733db22a410db14560868961997</sys_scope>
+        <sys_scope_delete display_value="">1079a96a601f4a50828bb798eb514564</sys_scope_delete>
+        <sys_update_name>sys_rest_message_fn_parameters_816f43ffdbe2a410db145608689619af</sys_update_name>
+        <sys_update_version display_value="sys_rest_message_fn_parameters_816f43ffdbe2a410db145608689619af">b98f03ffdbe2a410db145608689619bd</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-04 23:55:55</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
